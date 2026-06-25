@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="CityData" format=3 uid="uid://dyjf6o23cwsms"]
+
+[ext_resource type="Script" uid="uid://b0qrpo5mvge0l" path="res://CityData.gd" id="1_4plhf"]
+
+[resource]
+script = ExtResource("1_4plhf")
+metadata/_custom_type_script = "uid://b0qrpo5mvge0l"

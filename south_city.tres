@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CityData" format=3 uid="uid://c42wwy03bc7fa"]
+
+[ext_resource type="Script" uid="uid://b0qrpo5mvge0l" path="res://CityData.gd" id="1_w3o3t"]
+
+[resource]
+script = ExtResource("1_w3o3t")
+city_name = "Южный"
+food_price = 80
+metadata/_custom_type_script = "uid://b0qrpo5mvge0l"

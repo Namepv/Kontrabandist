@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://d2pph8ucq25dg"]
+
+[ext_resource type="Script" uid="uid://yv8vcem6hd5u" path="res://item_data.gd" id="1_xfbji"]
+
+[resource]
+script = ExtResource("1_xfbji")
+item_name = "Еда"
+price = 150
+metadata/_custom_type_script = "uid://yv8vcem6hd5u"

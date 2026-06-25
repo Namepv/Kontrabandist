@@ -9,34 +9,34 @@
 script = ExtResource("1_ig7tw")
 current_item = ExtResource("2_0xm2m")
 
-[node name="MoneyLabel" type="Label" parent="." unique_id=806978359]
-offset_left = 568.0
-offset_top = 27.0
-offset_right = 657.0
-offset_bottom = 58.0
-text = "Монеты"
+[node name="Label" type="Label" parent="." unique_id=806978359]
+offset_left = 135.0
+offset_top = 77.0
+offset_right = 224.0
+offset_bottom = 108.0
+text = "это панель"
 
 [node name="Button_plus" type="Button" parent="." unique_id=846318349]
-offset_left = 570.0
-offset_top = 579.0
-offset_right = 669.0
-offset_bottom = 610.0
+offset_left = 132.0
+offset_top = 156.0
+offset_right = 231.0
+offset_bottom = 187.0
 text = "+100
 "
 script = SubResource("GDScript_0xm2m")
 
 [node name="Button_minus" type="Button" parent="." unique_id=1874494309]
-offset_left = 568.0
-offset_top = 524.0
-offset_right = 668.0
-offset_bottom = 562.0
+offset_left = 246.0
+offset_top = 155.0
+offset_right = 346.0
+offset_bottom = 193.0
 text = "-100"
 
 [node name="BtnBuy" type="Button" parent="." unique_id=2022762304]
-offset_left = 32.0
-offset_top = 169.0
-offset_right = 98.0
-offset_bottom = 200.0
+offset_left = 23.0
+offset_top = 147.0
+offset_right = 89.0
+offset_bottom = 178.0
 text = "Купить"
 
 [node name="ItemNameLabel" type="Label" parent="." unique_id=477189853]
@@ -46,27 +46,10 @@ offset_right = 79.0
 offset_bottom = 135.0
 
 [node name="ItemPriceLabel" type="Label" parent="." unique_id=175812889]
-offset_left = 163.0
-offset_top = 109.0
-offset_right = 203.0
-offset_bottom = 132.0
-
-[node name="StatusLabel" type="Label" parent="." unique_id=1439403494]
-offset_left = 41.0
-offset_top = 215.0
-offset_right = 81.0
-offset_bottom = 238.0
-
-[node name="InventoryLabel" type="Label" parent="." unique_id=58323053]
-offset_left = 569.0
-offset_top = 89.0
-offset_right = 609.0
-offset_bottom = 112.0
-
-[node name="CityLabel" type="Label" parent="." unique_id=1492175938]
-offset_left = 39.0
-offset_right = 200.0
-offset_bottom = 81.0
+offset_left = 105.0
+offset_top = 112.0
+offset_right = 145.0
+offset_bottom = 135.0
 
 [connection signal="pressed" from="Button_plus" to="." method="_on_button_plus_pressed"]
 [connection signal="pressed" from="Button_minus" to="." method="_on_button_minus_pressed"]
