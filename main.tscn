@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://dl4vctgpci53p"]
+
+[ext_resource type="Script" uid="uid://0stjig8k1bu" path="res://main.gd" id="1_ig7tw"]
+
+[sub_resource type="GDScript" id="GDScript_0xm2m"]
+
+[node name="main" type="Node2D" unique_id=492037468]
+script = ExtResource("1_ig7tw")
+
+[node name="Label" type="Label" parent="." unique_id=806978359]
+offset_left = 135.0
+offset_top = 77.0
+offset_right = 224.0
+offset_bottom = 108.0
+text = "это панель"
+
+[node name="Button_plus" type="Button" parent="." unique_id=846318349]
+offset_left = 132.0
+offset_top = 156.0
+offset_right = 231.0
+offset_bottom = 187.0
+text = "+100
+"
+script = SubResource("GDScript_0xm2m")
+
+[node name="Button_minus" type="Button" parent="." unique_id=1874494309]
+offset_left = 246.0
+offset_top = 155.0
+offset_right = 346.0
+offset_bottom = 193.0
+text = "-100"
+
+[connection signal="pressed" from="Button_plus" to="." method="_on_button_plus_pressed"]
+[connection signal="pressed" from="Button_minus" to="." method="_on_button_minus_pressed"]
