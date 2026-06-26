@@ -1,17 +1,11 @@
 [gd_scene format=3 uid="uid://dl4vctgpci53p"]
 
-[ext_resource type="Script" uid="uid://0stjig8k1bu" path="res://main.gd" id="1_ig7tw"]
-[ext_resource type="Resource" uid="uid://d2pph8ucq25dg" path="res://food.tres" id="2_0xm2m"]
-[ext_resource type="Resource" uid="uid://dyjf6o23cwsms" path="res://north_city.tres" id="3_1bvp3"]
-[ext_resource type="Resource" uid="uid://c42wwy03bc7fa" path="res://south_city.tres" id="4_lquwl"]
+[ext_resource type="Script" uid="uid://0stjig8k1bu" path="res://Scripts/main.gd" id="1_jjvhh"]
 
 [sub_resource type="GDScript" id="GDScript_0xm2m"]
 
 [node name="main" type="Node2D" unique_id=492037468]
-script = ExtResource("1_ig7tw")
-current_item = ExtResource("2_0xm2m")
-north_city = ExtResource("3_1bvp3")
-south_city = ExtResource("4_lquwl")
+script = ExtResource("1_jjvhh")
 
 [node name="MoneyLabel" type="Label" parent="." unique_id=806978359]
 offset_left = 568.0

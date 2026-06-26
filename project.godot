@@ -11,9 +11,16 @@ config_version=5
 [application]
 
 config/name="Kontrabandist"
-run/main_scene="res://main.tscn"
+run/main_scene="res://Scenes/main.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*uid://brhn64eqvoxky"
+Inventory="*uid://btp1q41slttoa"
+TradeManager="*uid://cv03sgyd2jc8b"
+UIManager="*uid://c3h8rnsfbqr50"
 
 [display]
 
