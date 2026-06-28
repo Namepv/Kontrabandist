@@ -6,8 +6,10 @@ var inventory := {}
 
 var cargo_capacity := 10
 
-var current_city: CityData
-var current_item: ItemData
+var current_city
+var current_item
 
 var north_city: CityData
 var south_city: CityData
+
+var ui_manager

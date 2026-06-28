@@ -3,43 +3,43 @@ extends Node
 func buy_item():
 
 	if GameManager.current_item == null:
-		UIManager.show_status("Товар не найден")
+		GameManager.ui_manager.show_status("Товар не найден")
 		return
 
-	if GameManager.money < GameManager.current_city.food_price:
-		UIManager.show_status("Недостаточно денег!")
+	if GameManager.money < calculate_price():
+		GameManager.ui_manager.show_status("Недостаточно денег!")
 		return
 
 	if !Inventory.has_space():
-		UIManager.show_status("Транспорт заполнен")
+		GameManager.ui_manager.show_status("Транспорт заполнен")
 		return
 
-	GameManager.money -= GameManager.current_city.food_price
+	GameManager.money -= calculate_price()
 
 	Inventory.add_item(GameManager.current_item.item_name)
 
-	UIManager.refresh_all()
+	GameManager.ui_manager.refresh_all()
 
-	UIManager.show_status("Куплено: " + GameManager.current_item.item_name)
+	GameManager.ui_manager.show_status("Куплено: " + GameManager.current_item.item_name)
 
 
 func sell_item():
 
 	if GameManager.current_item == null:
-		UIManager.show_status("Товар не найден")
+		GameManager.ui_manager.show_status("Товар не найден")
 		return
 
 	if !GameManager.inventory.has(GameManager.current_item.item_name):
-		UIManager.show_status("Нет товара")
+		GameManager.ui_manager.show_status("Нет товара")
 		return
 
 	Inventory.remove_item(GameManager.current_item.item_name)
 
-	GameManager.money += GameManager.current_city.food_price
+	GameManager.money += calculate_price()
 
-	UIManager.refresh_all()
+	GameManager.ui_manager.refresh_all()
 
-	UIManager.show_status("Продано: " + GameManager.current_item.item_name)
+	GameManager.ui_manager.show_status("Продано: " + GameManager.current_item.item_name)
 
 
 func change_city():
@@ -49,4 +49,8 @@ func change_city():
 	else:
 		GameManager.current_city = GameManager.north_city
 
-	UIManager.update_city()
+	GameManager.ui_manager.update_city()
+
+func calculate_price() -> int:
+	return GameManager.current_city.prices[GameManager.current_item.item_name]
+	

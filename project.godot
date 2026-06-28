@@ -20,7 +20,6 @@ config/icon="res://icon.svg"
 GameManager="*uid://brhn64eqvoxky"
 Inventory="*uid://btp1q41slttoa"
 TradeManager="*uid://cv03sgyd2jc8b"
-UIManager="*uid://c3h8rnsfbqr50"
 
 [display]
 
